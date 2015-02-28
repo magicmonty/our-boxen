@@ -1,14 +1,14 @@
 class people::magicmonty::applications {
   include steam
   include spotify
-  include handbrake
+  #include handbrake
   include evernote
   include googledrive
   include java
   # include go
   include oh-my-zsh
   include tagr
-  include cyberduck
+  #include cyberduck
   include iterm2::stable
   include iterm2::colors::solarized_dark
   # include kindle
@@ -34,11 +34,15 @@ class people::magicmonty::applications {
   $homebrew_packages = [
     'aria2',
     'exiv2',
-    'ext4fuse',
     # 'ghostscript',
     'mkvtoolnix'
   ]
 
+  $homebrew_cask_packages = [
+    'osxfuse',
+    'ext4fuse'
+  ]
   ## Declare all Homebrew packages at once
+  package { $homebrew_cask_packages: provider => 'brewcask' }
   package { $homebrew_packages: }
 }

@@ -80,7 +80,7 @@ node default {
   include vlc
   include alfred
   include gimp
-  include osxfuse
+  # include osxfuse
   include ntfs_3g
   include inkscape
   # include libreoffice
@@ -142,6 +142,12 @@ node default {
       'mc'
     ]:
   }
+
+  package {
+    [
+      'osxfuse'
+    ]: provider => 'brewcask'
+  ]
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
