@@ -34,15 +34,11 @@ class people::magicmonty::applications {
   $homebrew_packages = [
     'aria2',
     'exiv2',
+    'ext4fuse'
     # 'ghostscript',
     'mkvtoolnix'
   ]
 
-  $homebrew_cask_packages = [
-    'osxfuse',
-    'ext4fuse'
-  ]
   ## Declare all Homebrew packages at once
-  package { $homebrew_cask_packages: provider => 'brewcask' }
   package { $homebrew_packages: }
 }
