@@ -147,7 +147,7 @@ node default {
     [
       'osxfuse'
     ]: provider => 'brewcask'
-  ]
+  }
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
