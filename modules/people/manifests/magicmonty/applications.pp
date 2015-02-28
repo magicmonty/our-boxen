@@ -1,14 +1,13 @@
 class people::magicmonty::applications {
   include steam
   include spotify
-  #include handbrake
   include evernote
   include googledrive
   include java
   # include go
   include oh-my-zsh
   include tagr
-  #include cyberduck
+  include cyberduck
   include iterm2::stable
   include iterm2::colors::solarized_dark
   # include kindle
@@ -25,6 +24,10 @@ class people::magicmonty::applications {
   # go::version { '1.2': }
   # go::version { '1.3': }
   # go::version { '1.4': }
+
+  class { 'handbrake':
+    version => '0.10.0'
+  }
 
   class { 'intellij':
     edition => 'community',
