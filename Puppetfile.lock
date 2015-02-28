@@ -99,6 +99,11 @@ GITHUBTARBALL
     googledrive (1.0.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-handbrake
+  specs:
+    handbrake (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.11.2)
@@ -274,6 +279,11 @@ GITHUBTARBALL
     xmind (2.1.1)
 
 GITHUBTARBALL
+  remote: magicmonty/puppet-cyberduck
+  specs:
+    cyberduck (1.0.2)
+
+GITHUBTARBALL
   remote: magicmonty/puppet-rubymine
   specs:
     rubymine (1.0.0)
@@ -303,6 +313,7 @@ DEPENDENCIES
   calibre (= 3.1.0)
   chrome (= 1.2.0)
   crashplan (= 1.0.1)
+  cyberduck (= 1.0.2)
   dnsmasq (= 2.0.1)
   dropbox (= 1.4.1)
   eclipse (= 2.5.0)
@@ -313,6 +324,7 @@ DEPENDENCIES
   gimp (= 1.0.1)
   git (= 2.7.1)
   googledrive (= 1.0.2)
+  handbrake (= 1.0.1)
   homebrew (= 1.11.2)
   hub (= 1.4.0)
   inifile (= 1.1.1)
