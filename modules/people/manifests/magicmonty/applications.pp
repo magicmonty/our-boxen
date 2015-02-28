@@ -3,7 +3,6 @@ class people::magicmonty::applications {
   include spotify
   include evernote
   include googledrive
-  include java
   # include go
   include oh-my-zsh
   include tagr
@@ -24,7 +23,7 @@ class people::magicmonty::applications {
   # go::version { '1.2': }
   # go::version { '1.3': }
   # go::version { '1.4': }
-
+  
   class { 'handbrake':
     version => '0.10.0'
   }
