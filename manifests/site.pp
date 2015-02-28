@@ -88,7 +88,7 @@ node default {
   include chrome
   include zsh
   include crashplan
-  include mactex::full
+  #include mactex::full
   include appcleaner
   include virtualbox
   include macvim
