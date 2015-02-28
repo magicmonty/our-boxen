@@ -35,7 +35,7 @@ class people::magicmonty::applications {
     'aria2',
     'exiv2',
     'ext4fuse',
-    'ghostscript',
+    # 'ghostscript',
     'mkvtoolnix'
   ]
 
