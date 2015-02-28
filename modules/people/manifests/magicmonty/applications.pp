@@ -34,7 +34,7 @@ class people::magicmonty::applications {
   $homebrew_packages = [
     'aria2',
     'exiv2',
-    'ext4fuse'
+    'ext4fuse',
     # 'ghostscript',
     'mkvtoolnix'
   ]
